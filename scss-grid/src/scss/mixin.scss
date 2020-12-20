@@ -1,0 +1,13 @@
+@mixin shower {
+  padding: 1em;
+
+  div {
+    background-color: #eee;
+    padding: 1em;
+    /////////////
+  }
+
+  & > div:nth-child(odd) {
+    background-color: #ddd;
+  }
+}

@@ -1,0 +1,10 @@
+@import "../../scss/mixin.scss";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  column-gap: 1em;
+  row-gap: 1em;
+
+  @include shower();
+}

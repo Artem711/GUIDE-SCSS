@@ -1,0 +1,62 @@
+@import "../../scss/mixin.scss";
+
+.wrapper {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "header header header header"
+    "footer footer footer footer"
+    "aside aside nav nav"
+    "main main main main"
+    "main main main main"
+    "section section section section"
+    "section section section section";
+
+  gap: 10px;
+
+  @media screen and (min-width: 760px) {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "header header header header"
+      "aside . main main"
+      "nav . main main"
+      "section section section section"
+      "section section section section"
+      "footer footer footer footer";
+
+    gap: 10px;
+  }
+
+  & > * {
+    background-color: blue;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  section {
+    grid-area: section;
+  }
+}
