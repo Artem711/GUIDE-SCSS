@@ -1,12 +1,13 @@
 // PLUGINS IMPORTS //
+import { ThemeProvider } from "styled-components"
 import { NextSeo } from "next-seo"
-import Head from "next/head"
-
-import "scss/global.scss"
 
 // COMPONENTS IMPORTS //
+import Head from "next/head"
+import Theme from "scss/theme"
 
 // EXTRA IMPORTS //
+import "scss/global.scss"
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -23,7 +24,9 @@ function MyApp({ Component, pageProps }) {
         title="Natours | Exciting tours for adventurous people"
         description="A short description goes here."
       />
-      <Component {...pageProps} />
+      <ThemeProvider theme={Theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   )
 }

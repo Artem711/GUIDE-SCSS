@@ -1,4 +1,5 @@
 // PLUGINS IMPORTS //
+import { FC } from "react"
 
 // COMPONENTS IMPORTS //
 
@@ -7,8 +8,16 @@ import styles from "./paragraph-heading.module.scss"
 
 /////////////////////////////////////////////////////////////////////////////
 
-const ParagraphHeading = () => {
-  return <h2 className={styles.wrapper}></h2>
+interface PropsType {
+  title: string
+}
+
+const ParagraphHeading: FC<PropsType> = (props) => {
+  return (
+    <div>
+      <h2 className={styles.wrapper}>{props.title}</h2>
+    </div>
+  )
 }
 
 export default ParagraphHeading

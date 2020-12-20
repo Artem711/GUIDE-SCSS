@@ -1,4 +1,5 @@
 // PLUGINS IMPORTS //
+import { FC } from "react"
 
 // COMPONENTS IMPORTS //
 
@@ -7,11 +8,16 @@ import styles from "./hero-heading.module.scss"
 
 /////////////////////////////////////////////////////////////////////////////
 
-const Heading = () => {
+interface PropsType {
+  title: string
+  subtitle: string
+}
+
+const Heading: FC<PropsType> = (props) => {
   return (
     <h1 className={styles.wrapper}>
-      <span>Outdoors</span>
-      <span>is where life happens</span>
+      <span>{props.title}</span>
+      <span>{props.subtitle}</span>
     </h1>
   )
 }

@@ -4,11 +4,21 @@
 
 // EXTRA IMPORTS //
 import styles from "./button.module.scss"
+import { FC } from "react"
 
 /////////////////////////////////////////////////////////////////////////////
 
-const Button = () => {
-  return <a className={styles.wrapper}>Discover out tours</a>
+interface PropsType {
+  text: string
+  onClick?: () => void
+}
+
+const Button: FC<PropsType> = (props) => {
+  return (
+    <a className={styles.wrapper} onClick={props.onClick}>
+      {props.text}
+    </a>
+  )
 }
 
 export default Button
