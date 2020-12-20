@@ -1,7 +1,8 @@
 // PLUGINS IMPORTS //
 import { NextSeo } from "next-seo"
+import Head from "next/head"
 
-import "../styles/globals.css"
+import "../styles/globals.scss"
 
 // COMPONENTS IMPORTS //
 
@@ -12,8 +13,14 @@ import "../styles/globals.css"
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+          rel="stylesheet"
+        />
+      </Head>
       <NextSeo
-        title="Simple Usage Example"
+        title="Natours | Exciting tours for adventurous people"
         description="A short description goes here."
       />
       <Component {...pageProps} />
