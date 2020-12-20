@@ -2,6 +2,7 @@
 import Image from "next/image"
 
 // COMPONENTS IMPORTS //
+import HeaderContent from "./header-content"
 
 // EXTRA IMPORTS //
 import styles from "./header.module.scss"
@@ -21,12 +22,7 @@ const Header = () => {
         />
       </div>
 
-      <div className={styles.content_wrap}>
-        <h1 className={styles.title_wrap}>
-          <span>Outdoors</span>
-          <span>is where life happens</span>
-        </h1>
-      </div>
+      <HeaderContent />
     </header>
   )
 }
