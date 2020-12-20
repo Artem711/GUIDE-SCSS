@@ -21,3 +21,11 @@ $image-offset: 4rem;
   top: $image-offset;
   left: $image-offset;
 }
+
+.content {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  text-align: center;
+}

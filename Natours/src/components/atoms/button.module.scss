@@ -1,0 +1,55 @@
+@import "scss/abstracts/variables";
+
+.wrapper {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  background-color: $color-white;
+  position: relative;
+  transition: all 0.4s;
+  cursor: pointer;
+  animation: moveInBottom 0.5s ease-out 0.75s backwards;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-white;
+    z-index: -1;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    transform: translateY(5vh);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

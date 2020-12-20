@@ -2,7 +2,8 @@
 import Image from "next/image"
 
 // COMPONENTS IMPORTS //
-import HeaderContent from "./header-content"
+import Heading from "components/typography/heading"
+import Button from "components/atoms/button"
 
 // EXTRA IMPORTS //
 import styles from "./header.module.scss"
@@ -22,7 +23,10 @@ const Header = () => {
         />
       </div>
 
-      <HeaderContent />
+      <div className={styles.content}>
+        <Heading />
+        <Button />
+      </div>
     </header>
   )
 }

@@ -1,0 +1,62 @@
+@import "scss/abstracts/variables";
+
+.wrapper {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  span {
+    display: block;
+    font-weight: 400;
+  }
+
+  span:nth-child(1) {
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+    font-weight: 400;
+
+    // animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+    animation: moveInLeft 1s ease-out;
+  }
+
+  span:nth-child(2) {
+    font-size: 2rem;
+    letter-spacing: 1.75rem;
+    font-weight: 700;
+
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
