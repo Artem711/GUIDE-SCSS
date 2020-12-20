@@ -1,14 +1,18 @@
 // PLUGINS IMPORTS //
+import Link from "next/link"
 
 // COMPONENTS IMPORTS //
 
 // EXTRA IMPORTS //
-import "./index.module.scss"
 
 /////////////////////////////////////////////////////////////////////////////
 
 const Index = () => {
-  return <div></div>
+  return (
+    <div>
+      <Link href={"/one"}>One</Link>
+    </div>
+  )
 }
 
 export default Index
