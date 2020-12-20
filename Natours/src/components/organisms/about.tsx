@@ -8,7 +8,11 @@ import styles from "./about.module.scss"
 /////////////////////////////////////////////////////////////////////////////
 
 const About = () => {
-  return <></>
+  return (
+    <>
+      <section className={styles.wrapper}></section>
+    </>
+  )
 }
 
 export default About
