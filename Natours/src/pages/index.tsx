@@ -1,8 +1,8 @@
 // PLUGINS IMPORTS //
 
 // COMPONENTS IMPORTS //
-import Header from "../components/organisms/header"
-import About from "components/organisms/about"
+import Header from "../components/templates/header"
+import About from "components/templates/about"
 
 // EXTRA IMPORTS //
 

@@ -4,10 +4,10 @@ import { NextSeo } from "next-seo"
 
 // COMPONENTS IMPORTS //
 import Head from "next/head"
-import Theme from "scss/theme"
+import Theme from "styles/theme"
 
 // EXTRA IMPORTS //
-import "scss/global.scss"
+import "styles/global.scss"
 
 /////////////////////////////////////////////////////////////////////////////
 
