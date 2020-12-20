@@ -1,9 +1,9 @@
 // PLUGINS IMPORTS //
-import Head from "next/head"
+import { NextSeo } from "next-seo"
+
 import "../styles/globals.css"
 
 // COMPONENTS IMPORTS //
-import Header from "../components/header"
 
 // EXTRA IMPORTS //
 
@@ -12,10 +12,10 @@ import Header from "../components/header"
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <title>Blog website</title>
-      </Head>
-      <Header />
+      <NextSeo
+        title="Simple Usage Example"
+        description="A short description goes here."
+      />
       <Component {...pageProps} />
     </>
   )

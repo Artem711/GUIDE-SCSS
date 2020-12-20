@@ -9,8 +9,11 @@
   },
   "dependencies": {
     "next": "10.0.3",
+    "next-seo": "^4.17.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "swr": "^0.3.10",
+    "unfetch": "^4.2.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.14",
