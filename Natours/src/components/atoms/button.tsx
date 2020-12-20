@@ -1,11 +1,11 @@
 // PLUGINS IMPORTS //
 import styled, { keyframes } from "styled-components"
+import { transparentize } from "polished"
 import { FC } from "react"
 
 // COMPONENTS IMPORTS //
 
 // EXTRA IMPORTS //
-import { transparentize } from "polished"
 
 /////////////////////////////////////////////////////////////////////////////
 

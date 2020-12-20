@@ -1,21 +1,29 @@
 // PLUGINS IMPORTS //
+import styled from "styled-components"
 
 // COMPONENTS IMPORTS //
+import ParagraphHeading from "components/typography/paragraph-heading"
 
 // EXTRA IMPORTS //
-import styles from "./about.module.scss"
-import ParagraphHeading from "components/typography/paragraph-heading"
 
 /////////////////////////////////////////////////////////////////////////////
 
 const About = () => {
   return (
     <>
-      <section className={styles.wrapper}>
+      <Wrapper>
         <ParagraphHeading title={"Exciting tours for adventurous people"} />
-      </section>
+      </Wrapper>
     </>
   )
 }
+
+/////////////////////////////////////////////////////////////////////////////
+
+const Wrapper = styled.section`
+  background-color: ${({ theme }) => theme.colors.greyLight1};
+  padding: 25rem 0;
+  margin-top: -20vh;
+`
 
 export default About
