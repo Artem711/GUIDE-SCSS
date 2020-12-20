@@ -2,7 +2,7 @@
 import Image from "next/image"
 
 // COMPONENTS IMPORTS //
-import Heading from "components/typography/heading"
+import Heading from "components/typography/hero-heading"
 import Button from "components/atoms/button"
 
 // EXTRA IMPORTS //
