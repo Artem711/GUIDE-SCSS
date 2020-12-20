@@ -2,7 +2,7 @@
 import { NextSeo } from "next-seo"
 import Head from "next/head"
 
-import "../styles/globals.scss"
+import "../styles/global.scss"
 
 // COMPONENTS IMPORTS //
 

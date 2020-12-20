@@ -14,6 +14,8 @@ const HeaderContent = () => {
         <span>Outdoors</span>
         <span>is where life happens</span>
       </h1>
+
+      <a className={styles.button}>Discover out tours</a>
     </div>
   )
 }
