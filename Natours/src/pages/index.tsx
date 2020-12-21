@@ -1,8 +1,7 @@
 // PLUGINS IMPORTS //
 
 // COMPONENTS IMPORTS //
-import Header from "../components/templates/header"
-import About from "components/templates/about"
+import { HeaderTemplate, AboutTemplate } from "../components/templates"
 
 // EXTRA IMPORTS //
 
@@ -11,9 +10,9 @@ import About from "components/templates/about"
 const Index = () => {
   return (
     <div>
-      <Header />
+      <HeaderTemplate />
       <main>
-        <About />
+        <AboutTemplate />
       </main>
     </div>
   )

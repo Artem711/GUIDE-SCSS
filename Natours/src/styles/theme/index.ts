@@ -9,4 +9,14 @@ export default {
     greyDark: "#777",
     greyLight1: "#f7f7f7",
   },
+
+  margins: {
+    small: "1.5rem",
+    medium: "4rem",
+    big: "8rem",
+  },
+
+  fonts: {
+    default: "1.6rem",
+  },
 }
