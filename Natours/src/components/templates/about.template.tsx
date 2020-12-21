@@ -15,7 +15,12 @@ const AboutTemplate = () => {
     {
       title: "YOU'RE GOING TO FALL IN LOVE WITH NATURE",
       text:
-        "ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima ea cum asperiores atque fugit amet numquam non voluptate ad cupiditate. dolor sit amet consectetur adipisicing elit. Animi dolorum nulla consequuntur sed pariatur qui doloremque commodi possimus facere nesciunt!",
+        "ipsum Lorem ipsum dolor,psu g esum dolor, sit onsectetur adipisicing epsum Lorem ipsum dolor, sit onsectetur adipisicing e sit onsectetur adipisicing eli tur sed pariatur qui doloremque commodi possimus facere nesciunt!",
+    },
+    {
+      title: "YOU'RE GOING TO FALL IN LOVE WITH NATURE",
+      text:
+        "ipsum Lorem ipsum dolor, sit onsectetur adipisicing eli tur sed pariatur qui doloremque commodi possimus facere nesciunt!",
     },
   ]
 
@@ -27,18 +32,17 @@ const AboutTemplate = () => {
         <Content>
           <div>
             <Paragraphs>
-              {[...data, ...data].map((item) => (
+              {data.map((item) => (
                 <ParagraphOrganism title={item.title} text={item.text} />
               ))}
             </Paragraphs>
             <LinkButton>Learn more &rarr;</LinkButton>
           </div>
-
           <ImagesOrganism
             images={[
-              "/images/nat-1.jpg",
-              "/images/nat-1.jpg",
-              "/images/nat-1.jpg",
+              "/images/nat-1-large.jpg",
+              "/images/nat-2-large.jpg",
+              "/images/nat-3-large.jpg",
             ]}
           />
         </Content>
@@ -53,27 +57,28 @@ const Wrapper = styled.section`
   background-color: ${({ theme }) => theme.colors.greyLight1};
   padding: 25rem 0;
   margin-top: -20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  display: grid;
+  justify-items: center;
 `
 
 const Title = styled(TitleSection)`
   margin-bottom: ${({ theme: { margins } }) => margins.big};
 `
 
-const GAP = "3rem"
+const GAP = 3
 const Content = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: ${GAP};
-  margin-bottom: 2rem;
+  gap: ${GAP + 4}rem;
   max-width: 114rem;
+  margin-bottom: 2rem;
+  grid-auto-rows: minmax(150px, auto);
 `
 
 const Paragraphs = styled.div`
   display: grid;
-  gap: ${GAP};
+  gap: ${GAP}rem;
   margin-bottom: ${({ theme: { margins } }) => margins.small};
 `
 
